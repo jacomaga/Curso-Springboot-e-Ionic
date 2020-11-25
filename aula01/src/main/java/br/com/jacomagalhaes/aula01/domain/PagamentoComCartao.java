@@ -2,6 +2,10 @@ package br.com.jacomagalhaes.aula01.domain;
 
 import br.com.jacomagalhaes.aula01.domain.enums.EstadoPagamento;
 
+import javax.persistence.Entity;
+
+@Entity
+
 public class PagamentoComCartao extends Pagamento {
     private static final long serialVersionUID = 1L;
 
