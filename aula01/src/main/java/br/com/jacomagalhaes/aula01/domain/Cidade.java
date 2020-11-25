@@ -1,5 +1,7 @@
 package br.com.jacomagalhaes.aula01.domain;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import java.io.Serializable;
 
 import javax.persistence.Entity;
@@ -18,6 +20,7 @@ public class Cidade implements Serializable {
     private Integer id;
     private String nome;
 
+    @JsonManagedReference
     @ManyToOne
     @JoinColumn(name="estado_id")
     private Estado estado;
